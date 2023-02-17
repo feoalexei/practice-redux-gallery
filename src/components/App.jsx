@@ -1,16 +1,15 @@
+import Router from './Router/Router';
+
 export const App = () => {
-  return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
-  );
+  return <Router />;
 };
+
+/* 
+- 3 routes: 
+    - Gallery, 
+    - MyGallery, 
+    - Modal
+- image array is stored in redux
+- open modal in one place -> close modal-> return back to current gallery
+
+*/
